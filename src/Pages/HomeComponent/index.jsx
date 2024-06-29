@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Typed from 'typed.js';
+import { IoMdDownload } from "react-icons/io";
 
 const Index = () => {
 
@@ -49,7 +50,8 @@ const Index = () => {
                         rel="noreferrer"
                         download
                     >
-                        Download Resume
+                        Download Resume 
+                        <IoMdDownload className="inline ml-3 text-3xl" />
                     </a>
 
                 </div>

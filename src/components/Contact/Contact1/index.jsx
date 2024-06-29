@@ -41,7 +41,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col justify-center">
                     <form onSubmit={handleSubmit} className="mt-6 sm:mt-8">
-                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                             <input
                                 type="text"
                                 name="firstName"
