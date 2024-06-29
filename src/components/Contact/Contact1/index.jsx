@@ -7,7 +7,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="px-4 sm:px-6 lg:px-8 py-12">
+        <div className="px-4 sm:px-6 lg:px-8 py-5">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center">
                 Contact Me
             </h2>
@@ -22,18 +22,18 @@ const Contact = () => {
 
                     <div className="mt-6">
                         <h2 className="text-3xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 inline">Email : </h2>
-                        <span className="text-2xl sm:text-[10px] lg:text-2xl font-bold text-white underline underline-offset-1">
+                        <span className="text-2xl sm:text-lg lg:text-2xl font-bold text-white underline underline-offset-1">
                             osamatamer.rizk.fahmy@gmail.com
                         </span>
                     </div>
                     <div className="mt-5">
                         <h2 className="text-3xl sm:text-4xl lg:text-3xl font-bold text-white mb-2 inline">Phone : </h2>
-                        <span className="text-2xl sm:text-3xl lg:text-2xl font-bold text-white">
+                        <span className="text-2xl sm:text-lg lg:text-2xl font-bold text-white">
                             01225139329
                         </span>
                     </div>
                     <div className="mt-5">
-                        <p className="text-2xl sm:text-3xl lg:text-2xl font-bold text-white">
+                        <p className="text-2xl sm:text-xl lg:text-2xl font-bold text-white">
                             Bachelor’s Degree: Computers and information technology, 2023,
                             Egyptian E-Learning University (EELU)
                         </p>
@@ -42,23 +42,27 @@ const Contact = () => {
                 <div className="flex flex-col justify-center">
                     <form onSubmit={handleSubmit} className="mt-6 sm:mt-8">
                         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                            <input
-                                type="text"
-                                name="firstName"
-                                placeholder="Full Name"
-                                className="block w-full rounded-[20px] border-0 p-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                            />
-                            <input
-                                id="email"
-                                type="email"
-                                name="email"
-                                placeholder="Email Address"
-                                required
-                                className="block w-full rounded-[20px] border-0 p-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                            />
+                            <div className="col-span-2">
+                                <input
+                                    type="text"
+                                    name="firstName"
+                                    placeholder="Full Name"
+                                    className="block w-full rounded-[20px] border-0 p-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                />
+                            </div>
+                            <div className="col-span-2">
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email Address"
+                                    required
+                                    className="block w-full rounded-[20px] border-0 p-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                />
+                            </div>
                             <ValidationError
                                 prefix="Email:"
-                                className="text-2xl text-red"
+                                className="text-2xl text-red col-span-2"
                                 field="email"
                                 errors={state.errors}
                             />
@@ -68,7 +72,7 @@ const Contact = () => {
                                     id="message"
                                     placeholder="Message"
                                     required
-                                    className="block w-full h-[200px] rounded-[20px] border-0 p-5 pt-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full h-[180px] rounded-[20px] border-0 p-5 pt-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                                 <ValidationError
                                     prefix="Message:"
